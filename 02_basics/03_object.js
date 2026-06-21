@@ -1,5 +1,5 @@
-//singelton
-//Object.create
+//singelton=> singelton object means that object have only one instance
+//Object.create = > this is the way to crate objects with a constructor which is a singleton
 //object litreals =>way to create the objects
 const mySym = Symbol("key1")
 const jsuser = {
