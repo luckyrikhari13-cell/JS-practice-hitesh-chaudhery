@@ -1,3 +1,5 @@
+
+//{}=> in javascript these are scopes
 // var c = 500
 let a = 300
 if(true)
