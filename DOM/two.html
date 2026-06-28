@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style = "background-color: #212121 ; color:#fff">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+   const parent =  document.querySelector('.parent')
+//    console.log(parent.children[1].innerHTML);
+//    for (let i = 0; i < parent.children.length; i++) {
+//         console.log(parent.children[i].innerHTML); }
+        parent.children[1].style.color = "orange"
+        // console.log(parent.firstElementChild)
+        // console.log(parent.lastElementChild)
+
+        const dayOne = document.querySelector('.day')
+        // to find the parent element of some html query use 
+        // console.log(dayOne.parentElement) // it will return the whole parent element containing his childs
+        // to go to the next element (called as sibling)
+        // console.log(dayOne.nextElementSibling)
+
+        console.log("NODES:",parent.childNodes)
+        //child nodes will contain everything from the enter , to the comment to the div , it is also divided into furthure inner object
+        // NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]0: text1: div.day2: text3: div.day4: text5: div.day6: text7: div.day8: textlength: 9[[Prototype]]: NodeList
+
+        
+
+</script>
+</html>
+
+
+<!-- const parent = document.querySelector(".parent");
+The browser creates an object like this (simplified):
+
+parent = {
+    children: HTMLCollection(...),
+    firstElementChild: ...,
+    lastElementChild: ...,
+    innerHTML: "...",
+    innerText: "...",
+    id: "...",
+
+    remove(){},
+    appendChild(){},
+    querySelector(){},
+    getAttribute(){}
+} -->
+
+<!-- so when we do parent.children it gives all the children inside it contianing in a html collection -->
+
