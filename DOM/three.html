@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky code</title>
+</head>
+<body style = "background-color: #212121 ; color:#fff">
+
+</body>
+<script>
+    // this is used to create a new element in javascript
+ const div = document.createElement('div')
+ console.log(div);
+ div.className = "main"
+ div.id = Math.round(Math.random()*10 +1)
+ // below one is used to set a custom attribute in a key value manner
+ div.setAttribute("title", "generated title")
+ div.style.backgroundColor = "green"
+ div.style.padding = "12px"
+ // after doing all of these above the div is not showing in the webpage because it is all created in the memory and has not been brought into the webpage 
+//  div.innerText = "lucky boy" // this is not preferred because it overwrites the existing text which takes two rounds which takes time
+
+const addText = document.createTextNode("lucky code") // it create a new text node and add in the addText
+// now the node is in the addtext but not in the div so we have to append it in the div
+div.appendChild(addText) // appendchild is used to add a element or anything inside the parent element
+//now it is added in the div but not in the document so we have to put it in the doucment by appending it
+document.body.appendChild(div) 
+//now it works
+
+</script>
+</html>
