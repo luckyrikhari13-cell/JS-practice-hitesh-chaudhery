@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1 id = "title" class = "heading"> DOM learning on Chai aur code</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div> 
+</body>
+</html>
+
+<!-- document.getElementById() here getelement by id is a method in a document-->
+
+<!-- .innerText gives the text visible on the screen  if a text is not visible due to some css it will not show in innertext -->
+
+<!-- but in textcontent all text inside it wil be shown unrelated to the css property -->
+
+<!-- innerhtml gives all the html inside it -->
+ 
+<!-- query selector is used to select a query -->
+ <!-- but query selector will select first query satifying that property  -->
+
+ <!-- but query selector all will select all property satisfying it -->
+
+ <!-- nodelist and html collection are not pure array -->
+
+<!-- mostly by using the query selector or query selector all you will get a nodelist -->
+ <!-- which is not a array but its many properties matches with array -->
+
+ <!-- for example -->
+
+ <!-- const myelement = document.queryselectorall('h1') it will select all elementw from the document and in a node list -->
+
+ <!-- so if you do a command like  -->
+  <!-- myelement.style.color= "green"  it will not work because it is not a array but -->
+
+  <!-- if you give a specified index myelement[0].style.color= "green" it will make that specified index green -->
+
+  <!-- get element by class name  return the ans in html collection -->
+
+  <!-- to convert the collection or node list we get from using the property use Array.from to convert it into array -->
+
+  <!-- like this Array.from(Html Collection) notice that the A should be capital -->
+
+  <!-- if you use queryselector() use "" inside () to specify that it is a query selector -->
+
+  <!-- otherwise if you use queryselector(name) it will search in the document that matches the variable name -->
+
+  <!-- you can apply for each in a node list -->
